@@ -2,7 +2,7 @@
 
 > ## Repository abandoned 2019-12-31
 >
-> This repository has moved to laminas/laminas-skeleton-installer.
+> This repository has moved to laminas/laminas-skeleton-installer. Va a cambiar la descripción
 
 ## Introduction
 
