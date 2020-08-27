@@ -2,14 +2,9 @@
 
 namespace Album;
 
-use Zend\ServicesManager\Factory\InvokableFactory;
+use Zend\Router\Http\Segment;
 
 return [
-    'controllers' => [
-        'factories' => [
-            Controller\AlbumController::class => InvokableFactory::class,
-        ],
-    ],
     
     'router' => [
         'routes' => [
@@ -19,7 +14,7 @@ return [
                     'route' => '/album[/:action[/:id]]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'id' => '[0-9]+',
+                        'id' => '[0-9]*',
                     ],
                     'defaults' => [
                         'controller' => Controller\AlbumController::class,

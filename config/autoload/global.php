@@ -12,5 +12,9 @@
  */
 
 return [
+    'db' => [
+        'driver' => 'Pdo',
+        'dsn' => sprintf('sqlite:%s/data/proyecto-zf3', realpath(getcwd())),
+    ],
     // ...
 ];
